@@ -17,16 +17,15 @@ def primes(number_of_primes):
     j = 0
     n = 1
     while i < number_of_primes - 2:
-        appended = True
-        prime = 0
         if j % 2 == 0:
             x = 6*n-1
         else:
             x = 6*n+1
             n += 1
+        prime = x
         
         k = 0
-        prime = x
+        appended = True
         while k < len(list):
             if prime % list[k] == 0:
                 appended = False
